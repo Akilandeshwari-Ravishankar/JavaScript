@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5%;
+    text-align: center;
+    color: white;
+}
+
+#gradient {
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%); 
+}
+
+#dark {
+    background: #1F2937;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border-color: transparent; 
+    font-size: 50px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+  opacity: 30%;
+}

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section id="gradient">
+            <h2>Metric/ Imperial unit conversion</h2>
+            <div class="cursor">
+                <form id="myform" name="myform">
+                    <input id="input-num" name="inputnum" type="number" onkeyup="conversion()" placeholder="Enter Number">
+                </form>
+            </div>
+        </section>
+        <section id="dark">
+            <p>Length (Meter/ Feet)</p>
+            <p id="len-conv">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+            <br>
+            <p>Volume (Liters/ Gallons)            <p></p>
+            <p id="vol-conv">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+            <br>
+            <p>Mass (Kilograms/ Pounds)</p>
+            <p id="mass-conv">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+        <script src="index.js"></script>
+    </body>
+</html>
