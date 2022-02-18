@@ -23,4 +23,15 @@ function generatePassword() {
     pwd4.textContent = generatePasswordHelper()
 }
 
+// let copyText = document.querySelector(".copy-text")
+// console.log(copyText)
+
+function copyToClipboard(elId) {
+    let passwordToCopy = document.getElementById(`${elId}`).innerText 
+    navigator.clipboard.writeText(passwordToCopy).then(function(){ 
+        console.log("copied to clipboard!")
+    }, function(err) {
+        console.error("copy failed!")
+    })
+}
 

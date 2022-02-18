@@ -8,6 +8,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 90vh;
 }
 
 #card {
@@ -67,6 +68,15 @@ hr {
     border-radius: 6px;
     text-align: center;
     align-items: center; 
-    letter-spacing: 0.01rem
+    letter-spacing: 0.01rem;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
 }
+
+/* .flex-container > input::placeholder {
+    color: #55F991;
+} */
+
+
 
