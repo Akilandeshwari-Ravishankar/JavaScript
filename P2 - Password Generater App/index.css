@@ -48,8 +48,8 @@ button {
 
 hr {
     border: 1px solid #2F3E53;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .flex-container {
@@ -74,9 +74,61 @@ hr {
     cursor: pointer;
 }
 
-/* .flex-container > input::placeholder {
-    color: #55F991;
+.pwd-copy {
+    position: relative;
+}
+
+.pwd-copy::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    text-align: center;
+    color: black;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    opacity: 70%;
+    width: max-content;
+    font-size: 0.8rem;
+    transform: translateY(-155%) translateX(60%);
+    transition: 10000ms transform;
+    display: none;
+}
+
+.pwd-copy::after
+{
+    content: '';
+    position: absolute;
+    margin-top: 9px;
+    border: 4px solid transparent;
+    border-top-color: white;
+    opacity: 70%;
+    transform: translateY(-515%) translate(800%);
+    display: none;
+}
+
+.pwd-copy:hover::before {
+    display: inline;
+}
+
+.pwd-copy:hover::after {
+    display: inline;
+}
+
+/* .pwd-copy:active::before {
+    content: "Copied!";
+    display: inline;
+}
+
+.pwd-copy:active::after {
+    display: inline;
+}
+
+.active {
+    display: block;
 } */
+
+ 
 
 
 

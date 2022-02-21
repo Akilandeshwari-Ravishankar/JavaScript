@@ -1,7 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -14,15 +13,22 @@
                 <br>
                 
                 <button onclick="generatePassword()"><i class="fa-solid fa-bolt"></i>&nbsp Generate passwords</button>
-                <hr>
+                <hr hidden>
                 <div class="flex-container">
-                    <div id="pwd-1" onclick="copyToClipboard('pwd-1')">1</div>
-                    <!-- <input id="pwd-1" class="copy-text" onclick="copyToClipboard()" type="text" placeholder="1">                     -->
-                    <div id="pwd-2">2</div>
+                    <div class="pwd-copy" id="pwd-1-div" data-tooltip="Copy">
+                        <div id="pwd-1" onclick="copyToClipboard('pwd-1')">-</div>
+                    </div>
+                    <div class="pwd-copy" id="pwd-2-div" data-tooltip="Copy">
+                        <div id="pwd-2" onclick="copyToClipboard('pwd-2')">-</div>
+                    </div>
                 </div>
                 <div class="flex-container">
-                    <div id="pwd-3">3</div>
-                    <div id="pwd-4">4</div>
+                    <div class="pwd-copy" id="pwd-3-div" data-tooltip="Copy">
+                        <div id="pwd-3" onclick="copyToClipboard('pwd-3')">-</div>
+                    </div>
+                    <div class="pwd-copy" id="pwd-4-div" data-tooltip="Copy">
+                        <div id="pwd-4" onclick="copyToClipboard('pwd-4')">-</div>
+                    </div>
                 </div>
             </div>
         </div>
