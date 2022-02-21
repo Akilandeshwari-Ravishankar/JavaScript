@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="head">
+            <h1 id="title-card-el">Invoice Creator</h1>
+            <p>Thanks for choosing GoodCorp, LLC!</p>
+        </div>
+        <div id="buttons">
+            <div class="flex-container-btns">
+                <button id="wash-car-btn">Wash Car: $10</button>
+                <button id="mow-lawn-btn">Mow Lawn: $20</button>
+                <button id="pull-weeds-btn">Pull Weeds: $30</button>
+            </div>
+            <div class="flex-container-note">
+                <p>TASK</p>
+                <p>TOTAL</p>
+            </div>
+        </div>
+        <div id="content">
+
+        </div>
+
+        <div id="invoice">
+            <hr>
+            <div class="flex-container-note">
+                <p>NOTES</p>
+                <p>TOTAL AMOUNT</p>
+            </div>
+            <div class="flex-container-result">
+                <p id="note"></p>
+                <div id="total-amt-el"></div>
+            </div>             
+            <button id="invoice-btn"><i class="fa-solid fa-refresh"></i>&nbsp Reset Invoice</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
